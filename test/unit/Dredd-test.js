@@ -397,7 +397,7 @@ GET /url
           assert.isOk(error);
           assert.instanceOf(error, Error);
           assert.property(error, 'message');
-          assert.include(error.message, 'Unable to load file from URL');
+          assert.include(error.message, 'Unable to load API description document from');
           done();
         }));
 
@@ -422,7 +422,7 @@ GET /url
           assert.isOk(error);
           assert.instanceOf(error, Error);
           assert.property(error, 'message');
-          assert.include(error.message, 'Error when loading file from URL');
+          assert.include(error.message, 'Unable to load API description document from');
           done();
         }));
 
